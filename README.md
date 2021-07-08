@@ -8,3 +8,4 @@ A lot of media queries was used to make the web application responsive and be ad
 Lessen the amount of code for media queries to make it more flexible as possible.
 
 # Deployment
+https://kho11.github.io/mulia-bali/competancyTest.html
