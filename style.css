@@ -1,0 +1,996 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+section {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    
+}
+
+header {
+    display: flex;
+    position: relative;
+    padding: 48px 0px 12px;
+    max-width: 100%;
+    margin: 0 auto;
+    justify-content: space-between;
+    align-items: center;
+}
+
+img.topIcon {
+  width: 100px;
+  height: 50px;
+  position: relative;
+}
+
+span.logoBrand {
+  right: 30%;
+  position: relative;
+}
+
+h1 {
+   position: relative;
+   top: 160px;
+   color: black;
+   font-size: 44px;
+   text-decoration: none;
+   text-transform: uppercase;
+   font-weight: 800;
+   letter-spacing: 1px;
+   left: 0;
+   text-align: center;
+   padding-left: 5%;
+}
+
+.main-navigation {
+    width: 100%;
+    float: right;
+}
+
+.mobile-nav#site-navigation {
+  display: none !important;
+}
+
+
+.main-navigation {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding-left: 0;
+    float: right;
+    line-height: 34px;
+}
+
+.main-navigation a {
+    position: relative;
+    margin-right: auto;
+    min-height: 44px;
+    font-size: 20px;
+    margin-bottom: 6px;
+    padding: 10px 40px;
+    top: 5px;
+    text-decoration: none;
+    color: black;
+}
+
+
+.main-navigation a:hover {
+    color: rgb(255, 191, 0);
+}
+
+.main-navigation .icon {
+  display: none;
+}
+
+img.logo{
+    max-width: 100%;
+    float: right;
+    height: auto;
+}
+
+.intro {
+    display: flex;
+    vertical-align: top;
+    padding-left: 87px;
+    margin-top: 7%;
+}
+
+p.smallIntro {
+  position: relative;
+  padding-top: 8%;
+  max-width: 100%;
+}
+
+.background {
+  background-image: url("img/icon.png");
+  background-repeat: repeat-x;
+  background-size: 500px 500px;
+  opacity: 0.6;
+  font-weight: 600;
+}
+
+.fullText {
+    display: flex;
+    text-align: center;
+    width: 91%;
+}
+
+h2 {
+    text-align: center;
+    font-size: 30px;
+}
+
+.textTwo {
+    display: flex;
+    width: 95%;
+    text-align: center;
+}
+
+.textTwo p {
+    padding-right: 1%;
+}
+
+
+/* Position the image container (needed to position the left and right arrows) */
+.container {
+    position: relative;
+    box-sizing: border-box;
+    margin-top: 5%;
+  }
+
+  .container img {
+      vertical-align: middle;
+  }
+  
+  /* Hide the images by default */
+  .mySlides {
+    display: none;
+  }
+  
+  /* Add a pointer when hovering over the thumbnail images */
+  .cursor {
+    cursor: pointer;
+  }
+  
+  /* Next & previous buttons */
+  .prev,
+  .next {
+    cursor: pointer;
+    position: absolute;
+    top: 40%;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover,
+  .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+  
+  /* Number text (1/3 etc) */
+  .numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+  
+  /* Container for image text */
+  .caption-container {
+    text-align: center;
+    background-color: #222;
+    padding: 2px 16px;
+    color: white;
+  }
+  
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Six columns side by side */
+  .column {
+    float: left;
+    width: 16.66%;
+  }
+  
+  /* Add a transparency effect for thumnbail images */
+  .demo {
+    opacity: 0.6;
+  }
+  
+  .active,
+  .demo:hover {
+    opacity: 1;
+  }
+
+  .articles-section {
+    text-align: center;
+  }
+
+  .twoArticles {
+    column-count: 2;
+    column-gap: 22px;
+    justify-content: center;
+  }
+
+  article.article {
+    background-color: transparent;
+    display: inline-block;
+    width: 61%;
+    padding-bottom: 61px;
+    margin: 0 8px 8px 0;
+  }
+
+  h3 {
+    font-size: 30px;
+  }
+
+  h4 {
+    font-size: 30px;
+  }
+
+  .articleOne {
+    width: 400px;
+    height: 400px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-bottom: 10px;
+  }
+
+  .articleHeadingOne {
+    font-weight: bold;
+    border-bottom: 2px solid;
+    font-size: 14px;
+    line-height: 16px;
+    text-transform: uppercase;
+    float: left;
+    color:rgb(255, 191, 0);
+  }
+
+  p.parOne {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+    line-height: 38px;
+    margin-top: 13px;
+    transition: 0.3s;
+    text-align: left;
+  }
+
+  .articleHeadingTwo {
+    font-weight: bold;
+    border-bottom: 2px solid;
+    font-size: 14px;
+    line-height: 16px;
+    text-transform: uppercase;
+    float: left;
+    color: rgb(255, 191, 0);;
+  }
+
+  .articleTwo {
+    width: 400px;
+    height: 400px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-bottom: 10px;
+  }
+
+  p.parTwo {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+    line-height: 38px;
+    margin-top: 13px;
+    transition: 0.3s;
+    text-align: left;
+  }
+
+  article.articleSecond {
+    width: 61%;
+  }
+
+  article span {
+    float: left;
+  }
+
+  .details {
+    margin-top: 10%;
+    display: flex;
+    justify-content: center;
+  }
+
+  form {
+    text-align: center;
+  }
+
+  label {
+    display: inline-block;
+    width: 140px;
+    text-align: left;
+  }
+
+  img.competitionOne {
+    width: 400px;
+    height: 400px;
+  }
+
+  img.competitionOne, img.competitionTwo {
+    padding-left: 5%;
+  }
+
+  img.competitionTwo {
+    width: 400px;
+    height: 400px;
+  }
+
+  label#conditions {
+    display: inline;
+  }
+
+  input#terms {
+    margin-left: 20.5%;
+  }
+
+  .button {
+    border-radius: 4px;
+    background-color: rgb(255, 191, 0);
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 28px;
+    padding: 20px;
+    width: 200px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+  }
+
+  .button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+  
+  .button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+  
+  .button:hover span {
+    padding-right: 25px;
+  }
+  
+  .button:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
+
+  h5 {
+    display: inline-block;
+    position: relative;
+    width: 30.2%;
+    max-width: none;
+    vertical-align: top;
+    font-size: 60px;
+    margin-left: 7%;
+  }
+
+  footer {
+    width: 100%;
+    max-width: 1366px;
+    background: #383838;
+    max-width: none;
+    position: relative;
+    padding-top: 97px;
+    padding-bottom: 32px;
+    color: white;
+  }
+
+
+  footer label {
+    display: initial;
+  }
+
+  .footerList label{
+    color: white;
+    font-size: 24px;
+    line-height: 34px;
+    font-weight: normal;
+  }
+
+  .footerList, .footerList2{
+    display: inline-block;
+    width: 30%;
+    border-left: 1px solid rgb(255 255 255 / 0.40);
+    padding-left: 25px;
+    padding-top: 10px;
+    vertical-align: top;
+    min-height: 285px;
+  }
+
+  
+  .footerList ul, .footerList2 ul {
+    padding-top: 26px;
+    display: block;
+    margin-left: 17px;
+  }
+
+  .footerList2 label {
+    color: white;
+    font-size: 24px;
+    line-height: 34px;
+    font-weight: normal;
+  }
+
+  .footerList li, .footerList2 li {
+    padding-bottom: 11px;
+    padding-left: 10px;
+  }
+
+  label.follow {
+    color: white;
+    font-size: 18px;
+    line-height: 34px;
+    margin-bottom: 8px;
+    display: block;
+    margin-top: 17px;
+  }
+
+  footer .social {
+    position: relative;
+  }
+
+  footer .social .icon {
+    cursor: pointer;
+    display: inline-block;
+    overflow: hidden;
+    margin-left: 0;
+    margin-right: 30px;
+    transition: 0.3s;
+    opacity: 1;
+    position: relative;
+    top: 0;
+  }
+
+  span.icon.linkedin {
+    font-size: 30px;
+    text-align: center;
+    line-height: 50px;
+  }
+
+  span.icon.twitter {
+    font-size: 30px;
+    text-align: center;
+    line-height: 50px;
+  }
+
+  span.icon.facebook {
+    font-size: 30px;
+    text-align: center;
+    line-height: 50px;
+  }
+
+  span.icon.google {
+    font-size: 30px;
+    text-align: center;
+    line-height: 50px;
+  }
+
+  .footerList a {
+    text-decoration: none;
+    display: inline-block;
+  }
+
+  .fa:hover {
+    opacity: 0.7;
+  }
+
+  .fa-twitter {
+    color: white;
+  }
+
+  .fa-linkedin {
+    color: white;
+    position: relative;
+    top: -3px;
+  }
+
+  .fa-facebook {
+    color: white;
+  }
+
+  .fa-google {
+    color: white;
+  }
+
+  .footerBottom {
+    border-top: 1px solid rgb(255 255 255 / 0.40);
+    text-align: center;
+  }
+
+  /* CSS media queries */
+
+@media only screen and (max-width: 1290px) {
+  .details {
+    font-size: 14px;
+  }
+
+  form {
+    margin-left: 20%;
+  }
+
+  footer {
+    width: 101%;
+  }
+}
+
+
+@media only screen and (max-width: 1046px) {
+  footer {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .details {
+    margin-left: -22%;
+  }
+
+  img.competitionTwo {
+    position: relative;
+    right: 1%;
+  }
+}
+
+@media only screen and (max-width: 1006px) {
+  footer {
+    width: 104%;
+  }
+}
+
+@media only screen and (max-width: 960px) {
+    img.competitionOne, img.competitionTwo {
+      width: 300px;
+      height: 300px;
+    }
+
+    .articleOne, .articleTwo {
+      width: 300px;
+      height: 300px;
+    }
+
+    .articleSecond {
+      margin-left: 13%;
+    }
+}
+
+@media only screen and (max-width:909px) {
+  span.logoBrand {
+    padding-bottom: 18%;
+  }
+
+  .main-navigation {
+    padding-bottom: 15%;
+  }
+
+  .intro {
+    margin-top: 13%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+
+  span.logoBrand {
+    display: none !important;
+  }
+
+  h1 {
+    position: relative;
+    top: 50px;
+  }
+
+  .intro {
+    margin-top: 5%;
+  }
+
+  .main-navigation a:not(:first-child) {display: none;}
+  .main-navigation a.icon {
+    float: right;
+    display: block;
+  }
+
+  .main-navigation.responsive {
+    position: absolute;
+  }
+
+  .main-navigation.responsive .icon {
+    position: relative;
+    right: 0;
+    top: 0;
+  }
+  .main-navigation.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+
+  .main-navigation {
+    position: absolute;
+    padding-bottom: 14%;
+  }
+
+  .background {
+    width: 100%;
+  }
+
+  .container {
+    width: 100%;
+  }
+
+  .articleOne, .articleTwo {
+    width: 300px;
+    height: 300px;
+  }
+
+  form {
+    margin-left: 43%;
+  }
+
+
+  img.competitionOne, img.competitionTwo {
+    width: 400px;
+    height: 300px;
+  }
+
+  img.competitionOne {
+    position: relative;
+    left: 5%;
+  }
+
+  img.competitionTwo {
+    position: relative;
+    right: 33%;
+    top: 381px;
+  }
+
+  .twoArticles {
+    position: relative;
+    right: 7%;
+  }
+
+  footer {
+    padding-top: 13px;
+    padding-bottom: 24px;
+    width: 100%;
+  }
+
+  .footerSection {
+    max-width: 750px;
+    padding: 22.5px;
+    min-height: 0;
+    font-size: 20px;
+  }
+
+  
+}
+
+@media only screen and (max-width: 674px) {
+  footer {
+    width: 104%;
+    overflow-x: hidden;
+  }
+}
+
+@media only screen and (max-width: 666px) {
+  form {
+    font-size: 10px;
+  }
+
+  img.competitionOne, img.competitionTwo {
+    width: 200px;
+    height: 200px;
+    margin-left: 9%;
+  }
+
+}
+
+@media only screen and (max-width: 634px) {
+  
+  .articleSecond {
+    float: right;
+  }
+  
+  footer {
+    width: 111%;
+  }
+}
+
+@media only screen and (max-width: 594px) {
+  .main-navigation {
+    padding-bottom: 26%;
+  }
+}
+
+@media only screen and (max-width: 582px) {
+  footer {
+    width: 100%;
+  }
+}
+
+
+
+@media only screen and (max-width: 558px) {
+  footer {
+    width: 114%;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  
+  h5 {
+    font-size: 50px;
+  }
+
+  form {
+    position: relative;
+    left: 9%;
+  }
+  
+  footer {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 510px) {
+  footer {
+    width: 120%;
+  }
+}
+
+@media only screen and (max-width: 506px) {
+  footer {
+    width: 120%;
+  }
+}
+
+@media only screen and (max-width: 490px) {
+  footer {
+    width: 122%;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+
+  .articleOne, .articleTwo {
+    width: 150px;
+    height: 150px;
+  }
+
+  article.articleSecond {
+    position: relative;
+    right: 30%;
+  }
+
+  img.competitionOne, img.competitionTwo {
+    width: 150px;
+    height: 150px;
+  }
+
+  img.competitionTwo {
+    position: relative;
+    right: 35%;
+    top: 190px;
+  }
+}
+
+
+@media only screen and (max-width: 462px) {
+  footer {
+    width: 124%;
+  }
+}
+
+@media only screen and (max-width: 434px) {
+  footer {
+    width: 126%;
+  }
+
+  h5 {
+    font-size: 32px;
+  }
+}
+
+@media only screen and (max-width: 432px) {
+  .main-navigation {
+    padding-bottom: 50%;
+  }
+}
+
+
+
+@media only screen and (max-width: 414px) {
+  footer {
+    width: 104%;
+  }
+
+  .footerSection {
+    font-size: 10px;
+  }
+
+  .footerList {
+    position: relative;
+    right: 6%;
+  }
+
+  label.follow {
+    margin-left: -21%;
+  }
+
+  .footerList label, .footerList2 label {
+    font-size: 15px;
+  }
+
+  img.competitionTwo {
+    position: relative;
+    left: -34%;
+  }
+}
+
+@media only screen and (max-width:411px) {
+  h1 {
+    margin-top: 30%;
+  }
+
+  img.articleOne, img.articleTwo {
+    width: 150px;
+    height: 150px;
+  }
+
+  article.article {
+    margin-left: 20%;
+  }
+
+  article.articleSecond {
+    width: 34%;
+  }
+
+  img.competitionTwo {
+    position: relative;
+    right: 26%;
+    top: 185px;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  form {
+    margin-left: 42%;
+  }
+}
+
+
+
+@media only screen and (max-width:360px) {
+
+  h1 {
+    margin-top: 30%;
+  }
+
+  form {
+    margin-left: 46%;
+  }
+
+  article.article {
+    margin-left: 30%;
+  }
+
+  article.articleSecond {
+    position: relative;
+    right: 21%;
+  }
+
+  .articleOne, .articleTwo {
+    width: 150px;
+    height: 150px;
+  }
+
+  img.competitionTwo {
+    position: relative;
+    right: 40%;
+    top: 185px;
+  }
+
+  footer {
+    width: 112%;
+  }
+
+  h5 {
+    font-size: 32px;
+  }
+}
+
+@media only screen and (max-width: 341px) {
+  .main-navigation {
+    position: absolute;
+    bottom: 31%;
+  }
+}
+
+@media only screen and (max-width:280px) {
+  .main-navigation {
+    padding-bottom: 77%;
+  }
+
+  p.parOne, p.parTwo {
+    font-size: 16px;
+  }
+
+  article.articleSecond {
+    padding-left:33%;
+  }
+
+  img.competitionOne {
+    position: relative;
+    right: 5%;
+  }
+
+  img.competitionOne, img.competitionTwo {
+    width: 100px;
+    height: 100px;
+    margin-left: 5%;
+  }
+
+  footer {
+    width: 100%;
+  }
+
+  h5 {
+    margin-left: -2%;
+    position: relative;
+    font-size: 11px;
+  }
+}
+
+
+
+
+
+
+
